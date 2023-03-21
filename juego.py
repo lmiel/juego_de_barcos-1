@@ -53,8 +53,6 @@ def jugar_una_partida():
     # Creamos un tablero de juego vacío
 
     tablero = Tablero()
-
-
     while True:
         tablero.ver()
 
