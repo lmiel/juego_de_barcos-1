@@ -1,6 +1,7 @@
 from clases.Tablero import *
 from clases.Barco import *
 from Conventions import *
+from juego import CASO_AGUA, CASO_NO_JUGADO, CASO_TOCADO
 
 
 instances = {}
@@ -10,8 +11,7 @@ def __init__(self, x, y):
   # Adición de las coordenadas
   self.x = x
   self.y = y
-
-# Queremos poder acceder a una casilla a partir de sus coordenadas
+  # Queremos poder acceder a una casilla a partir de sus coordenadas
 
   instances[x, y] = self
   
@@ -35,7 +35,7 @@ def jugar(self):
   self.jugadas.add(self)
   
   if self.barco is not None:
-    if len(casillas - self.casillas_jugadas) == 0:
+    if len(casilla.barco.casillas - self.casillas_jugadas) == 0:
       print("Hundido !!")
     else:
       print("Tocado !")
