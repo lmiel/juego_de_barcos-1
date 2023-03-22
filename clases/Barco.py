@@ -62,8 +62,7 @@ class barco:
             # Agregar estas casillas a las casillas ocupadas :
             barco.casillas_ocupadas.update(self.casillas)
             """print("Barco en: " + str(self.casillas))"""
-                
-      
+                   
     def generar_barcos(self):
         while True:
             barco = barco(choice(Conventions.barcos_longitud))
