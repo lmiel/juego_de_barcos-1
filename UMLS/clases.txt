@@ -1,0 +1,6 @@
+
+
+Barco: clase que representa un barco, muestra el tamaño, la orientacion y la ubicacion
+Tablero: representa el tablero del juego
+Case: representa cada celda del tablero y su estado (vacia, con barco, etc.)
+Conventions: Clase que contiene los atributos y los métodos estáticos (valores constantes)

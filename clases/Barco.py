@@ -20,7 +20,7 @@ num_columnas = Conventions.tablero_num_columnas
 num2l = Conventions.generar_num_linea
 num2c = Conventions.generar_num_columna
 
-class barco:
+class Barco:
     casillas_ocupadas = set()
     def __init__(self, longitud):
         self.longitud = longitud
@@ -60,12 +60,12 @@ class barco:
             for casilla in self.casillas:
                 casilla.contiene_barco = True
             # Agregar estas casillas a las casillas ocupadas :
-            barco.casillas_ocupadas.update(self.casillas)
+            Barco.casillas_ocupadas.update(self.casillas)
             """print("Barco en: " + str(self.casillas))"""
                    
-    def generar_barcos(self):
+    def generar_barcos():
         while True:
-            barco = barco(choice(Conventions.barcos_longitud))
+            barco = Barco(choice(Conventions.barcos_longitud))
             barco.horizontal()
             barco.instanciar()
             if len(instances) == len(Conventions.barcos_longitud):

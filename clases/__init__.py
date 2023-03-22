@@ -1,33 +1,25 @@
-"""
-Módulo que gestiona todas las funcionalidades de introducción de datos
-"""
-
 from .Barco import (
-    solicitar_introducir_numero,
-    solicitar_introducir_numero_extremo,
+    # horizontal,
+    # instanciar,
+    # generar_barcos
+    Barco
 )
 
-from .Case import (
-    solicitar_introducir_si_o_no,
-    solicitar_introducir_verdadero_o_falso,
+from .Case import(
+    # _generar_nombre,
+    # jugar,
+    # generar_casillas,
+    # __str__
+    Case
 )
 
 from .Conventions import (
-    solicitar_introducir_cadena,
-    solicitar_introducir_char,
-    solicitar_introducir_letra,
-    solicitar_introducir_palabra,
-    solicitar_introducir_casilla,
+    generar_num_linea,
+    generar_num_columna,
+    generar_nombre_casilla
 )
 
 from .Tablero import (
-    solicitar_introducir_cadena,
-    solicitar_introducir_char,
-    solicitar_introducir_letra,
-    solicitar_introducir_palabra,
-    solicitar_introducir_casilla,
+    # ver
+    Tablero
 )
-
-
-
-
