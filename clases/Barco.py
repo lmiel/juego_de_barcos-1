@@ -43,7 +43,7 @@ class Barco:
             letras = [num2l(x) for x in range(primero, primero + self.longitud)]
 
             # Crear el barco
-            self.casillas = {Case.instances[l + c]
+            self.casillas = {Case.Case.instances[l + c]
                 for l, c in product(letras, repeat(cifra, self.longitud))}
         return self.casillas
 

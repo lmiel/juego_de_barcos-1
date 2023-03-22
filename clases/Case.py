@@ -45,11 +45,10 @@ class Case:
     else:
         print("Agua !")
         
-  @classmethod
   def generar_casillas():
-    for x, y in product(range(tablero_num_lineas),
-      range(tablero_num_columnas)):
-      Case(x, y)
+    for x in range(tablero_num_lineas):
+      for y in range (tablero_num_columnas):
+        Case(x, y)
 
   def __str__(self):
     """Sobrecarga del método de transformación en cadena"""
