@@ -3,9 +3,9 @@ from clases.Barco import *
 from Conventions import *
 from juego import CASO_AGUA, CASO_NO_JUGADO, CASO_TOCADO
 
-
-instances = {}
-jugadas = set()
+class Case:
+  instances = {}
+  jugadas = set()
 
 def __init__(self, x, y):
   # Adición de las coordenadas
@@ -35,7 +35,7 @@ def jugar(self):
   self.jugadas.add(self)
   
   if self.barco is not None:
-    if len(casilla.barco.casillas - self.casillas_jugadas) == 0:
+    if len(casillas - self.casillas_jugadas) == 0:
       print("Hundido !!")
     else:
       print("Tocado !")
