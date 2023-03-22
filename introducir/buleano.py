@@ -1,6 +1,6 @@
 """
 Módulo que agrupa todas las funcionalidades
-que permiten solicitar introducir un dato cuya respuesta es VERDADERO/SÍ o FALSO/NO
+funciones para solicitar introducir un dato cuya respuesta es VERDADERO/SÍ o FALSO/NO
 """
 
 SI = ("o", "sí", "y", "yes", "1")
